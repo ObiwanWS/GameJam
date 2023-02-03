@@ -1,2 +1,2 @@
 # GameJam
-Global Game Jam Parnu project
+Global Game Jam Pärnu project
