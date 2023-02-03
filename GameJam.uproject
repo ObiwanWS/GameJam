@@ -391,7 +391,7 @@
 		},
 		{
 			"Name": "WorldPartitionHLODUtilities",
-			"Enabled": false
+			"Enabled": true
 		},
 		{
 			"Name": "XCodeSourceCodeAccess",
