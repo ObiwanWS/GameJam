@@ -26,6 +26,9 @@ public:
 	// 
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
+	// 
+	virtual void PossessedBy(AController* NewController) override;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

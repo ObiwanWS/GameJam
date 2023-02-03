@@ -17,13 +17,18 @@ UAbilitySystemComponent* AGameJamCharacter::GetAbilitySystemComponent() const
 	return AbilitySystemComponent;
 }
 
+void AGameJamCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	// Start the ability system component
+	AbilitySystemComponent->InitAbilityActorInfo(this, this);
+}
+
 // Called when the game starts or when spawned
 void AGameJamCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// Start the ability system component
-	AbilitySystemComponent->InitAbilityActorInfo(this, this);
 }
 
 // Called every frame
