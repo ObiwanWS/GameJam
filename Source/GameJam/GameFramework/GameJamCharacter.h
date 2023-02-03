@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "AbilitySystemInterface.h"
+#include <AbilitySystemInterface.h>
 #include <GameFramework/Character.h>
 #include "GameJamCharacter.generated.h"
 
