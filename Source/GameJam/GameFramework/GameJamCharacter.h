@@ -17,9 +17,6 @@ public:
 	// Sets default values for this character's properties
 	AGameJamCharacter();
 
-	// Called every frame
-	virtual void Tick(float deltaTime) override;
-
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* playerInputComponent) override;
 
@@ -34,6 +31,6 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Abilities, Meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent = nullptr;
 };
