@@ -434,6 +434,10 @@
 		{
 			"Name": "ModelingToolsEditorMode",
 			"Enabled": true
+		},
+		{
+			"Name": "LightWeightInstancesEditor",
+			"Enabled": true
 		}
 	]
 }
